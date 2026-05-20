@@ -1,3 +1,7 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 export default function Footer() {
   const quickLinks = [
     { name: 'Projects', href: '#projects' },
@@ -25,7 +29,12 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 border-2 border-brand-gold flex items-center justify-center rotate-45">
                 <span className="text-brand-gold font-display text-sm font-bold -rotate-45">PL</span>
@@ -41,10 +50,15 @@ export default function Footer() {
             <p className="text-white/30 text-xs">
               RERA No: RAJ/RERA/2024/000123
             </p>
-          </div>
+          </motion.div>
 
           {/* Quick Links */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <h4 className="text-brand-gold font-display text-sm tracking-widest uppercase mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -59,10 +73,15 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
           {/* Contact & Social */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <h4 className="text-brand-gold font-display text-sm tracking-widest uppercase mb-6">Get in Touch</h4>
             <div className="space-y-3 mb-6">
               <p className="text-white/50 text-sm">C-Scheme, Jaipur, Rajasthan 302001</p>
@@ -84,11 +103,17 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
           <p className="text-white/30 text-xs">
             © 2024 Prestige Landmarks. All rights reserved.
           </p>
@@ -100,7 +125,7 @@ export default function Footer() {
               Terms of Service
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
