@@ -13,6 +13,7 @@ export const projects: Project[] = [
     amenities: ['Swimming Pool', 'Clubhouse', 'Gymnasium'],
     description: 'Rising against the majestic Aravalli backdrop, these luxury apartments redefine elevated living with panoramic views and world-class amenities.',
     gradient: 'from-amber-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/aravalli_heights.png',
   },
   {
     id: 'royal-villas',
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     amenities: ['Private Garden', 'Smart Home', 'Covered Parking'],
     description: 'An exclusive enclave of regal villas where Rajasthani heritage meets contemporary luxury. Each villa is a masterpiece of architectural brilliance.',
     gradient: 'from-emerald-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/royal_villas.png',
   },
   {
     id: 'green-enclave',
@@ -39,6 +41,7 @@ export const projects: Project[] = [
     amenities: ['Landscaped Gardens', 'Jogging Track', '24/7 Security'],
     description: 'Build your dream on your terms. Premium plotted development surrounded by lush green landscapes and modern infrastructure.',
     gradient: 'from-teal-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/green_enclave.png',
   },
   {
     id: 'city-centre',
@@ -52,6 +55,7 @@ export const projects: Project[] = [
     amenities: ['Retail Spaces', 'Rooftop Lounge', 'Co-working'],
     description: 'Where commerce meets comfort. A landmark mixed-use development at the heart of Jaipur\'s thriving commercial district.',
     gradient: 'from-blue-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/city_centre.png',
   },
   {
     id: 'meadows',
@@ -65,6 +69,7 @@ export const projects: Project[] = [
     amenities: ['Kids Play Area', 'Swimming Pool', 'Clubhouse'],
     description: 'Nestled in serene surroundings, Prestige Meadows offers a tranquil lifestyle with sprawling greens and premium living spaces.',
     gradient: 'from-violet-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/meadows.png',
   },
   {
     id: 'skyline',
@@ -78,5 +83,6 @@ export const projects: Project[] = [
     amenities: ['Infinity Pool', 'Private Elevator', 'Helipad'],
     description: 'The pinnacle of luxury living. Sky-high residences with unmatched opulence, bespoke interiors, and a private world above the city.',
     gradient: 'from-rose-900/40 via-stone-900/60 to-zinc-950',
+    image: '/images/skyline.png',
   },
 ];

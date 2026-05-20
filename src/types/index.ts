@@ -10,6 +10,7 @@ export interface Project {
   amenities: string[];
   description: string;
   gradient: string;
+  image: string;
 }
 
 export interface Testimonial {
