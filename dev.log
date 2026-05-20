@@ -1,0 +1,17 @@
+
+> prestige-landmarks@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1699ms
+ ○ Compiling / ...
+ ✓ Compiled / in 12s (1431 modules)
+ GET / 200 in 13174ms
+ ✓ Compiled in 1182ms (697 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 6.7s (1402 modules)
+ GET /images/city_centre.png 404 in 6889ms
+ ⨯ The requested resource isn't a valid image for /images/city_centre.png received null
