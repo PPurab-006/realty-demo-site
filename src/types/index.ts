@@ -11,6 +11,20 @@ export interface Project {
   description: string;
   gradient: string;
   image: string;
+  // added for detail page
+  slug?: string;
+  fullDescription?: string;
+  stats?: {
+    plotSize?: string;
+    totalPlots?: string;
+    totalUnits?: string;
+    area?: string;
+    priceRange?: string;
+    reraNo?: string;
+  };
+  detailedAmenities?: { category: string; list: { name: string; icon: string }[] }[];
+  locationHighlights?: { name: string; distance: string }[];
+  images?: string[];
 }
 
 export interface Testimonial {
