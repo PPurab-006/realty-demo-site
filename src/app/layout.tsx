@@ -60,38 +60,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} font-body antialiased bg-brand-black text-white`}
       >
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.addEventListener('error', function(e) {
-                var div = document.createElement('div');
-                div.style.position = 'fixed';
-                div.style.top = '0';
-                div.style.left = '0';
-                div.style.zIndex = '999999';
-                div.style.background = 'red';
-                div.style.color = 'white';
-                div.style.padding = '20px';
-                div.style.fontSize = '20px';
-                div.innerHTML = 'Error: ' + e.message + '<br>' + e.filename + ':' + e.lineno;
-                document.body.appendChild(div);
-              });
-              window.addEventListener('unhandledrejection', function(e) {
-                var div = document.createElement('div');
-                div.style.position = 'fixed';
-                div.style.top = '50px';
-                div.style.left = '0';
-                div.style.zIndex = '999999';
-                div.style.background = 'orange';
-                div.style.color = 'white';
-                div.style.padding = '20px';
-                div.style.fontSize = '20px';
-                div.innerHTML = 'Unhandled Rejection: ' + e.reason;
-                document.body.appendChild(div);
-              });
-            `,
-          }}
-        />
         <CustomCursor />
         <Header />
         <main>{children}</main>

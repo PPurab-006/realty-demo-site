@@ -19,6 +19,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+export const dynamicParams = false;
+
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
 
